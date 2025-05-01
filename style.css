@@ -22,7 +22,6 @@ main {
   background-color: var(--navy-950);
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 1rem;
 }
 /* user profile start */
 .user-profile {
@@ -41,11 +40,11 @@ main {
   width: 70%;
 }
 .profile-header p {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .profile-header h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
 }
 nav {
