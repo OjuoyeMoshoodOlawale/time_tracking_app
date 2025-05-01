@@ -1,0 +1,152 @@
+:root {
+  --purple: hsl(246, 80%, 60%);
+  --orange: hsl(15, 100%, 70%);
+  --blue: hsl(195, 74%, 62%);
+  --pink: hsl(348, 100%, 68%);
+  --green: hsl(145, 58%, 55%);
+  --purple: hsl(264, 64%, 52%);
+  --yellow: hsl(43, 84%, 65%);
+
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  padding: 4rem;
+  background-color: var(--navy-950);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+/* user profile start */
+.user-profile {
+  background-color: var(--navy-900);
+  color: var(--navy-200);
+  height: 100%;
+
+  border-radius: 1rem;
+}
+.profile-header {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--purple);
+}
+.profile-header img {
+  width: 70%;
+}
+.profile-header p {
+  font-size: 1rem;
+}
+
+.profile-header h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+nav {
+  margin: 1rem;
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin: 0.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+nav ul .active * {
+  color: #fff;
+}
+/* user profile end */
+
+/* time-history start */
+.time-history {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+}
+/* time-history end */
+
+/* card start */
+.card {
+  margin: 0.5rem;
+  border-radius: 16px;
+  padding-top: 70px;
+  color: var(--navy-200);
+}
+.work,
+.play,
+.study,
+.excercise,
+.social,
+.self-care {
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.work {
+  background-color: var(--orange);
+  background-image: url("images/icon-work.svg");
+}
+.play {
+  background-color: var(--blue);
+  background-image: url("images/icon-play.svg");
+}
+.study {
+  background-color: var(--pink);
+  background-image: url("images/icon-study.svg");
+}
+.excercise {
+  background-color: var(--green);
+  background-image: url("images/icon-exercise.svg");
+}
+.social {
+  background-color: var(--purple);
+  background-image: url("images/icon-social.svg");
+}
+.self-care {
+  background-color: var(--yellow);
+  background-image: url("images/icon-self-care.svg");
+}
+.card-body {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: var(--navy-900);
+  padding: 30px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-title,
+.card-footer {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.header-action {
+  cursor: pointer;
+}
+.card-content {
+  font-size: 5rem;
+  margin-bottom: 5px;
+}
+/* card end */
+
+@media (max-width: 853px) {
+  main {
+    display: block;
+  }
+  .user-profile nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
